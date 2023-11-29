@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tennis Originals</title>
+
+    <meta name="description" content="Encontre os melhores tênis importados, moda masculina e feminina. Oferecemos uma grande varidade.">
+
+    
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+  <header role="heading">
+    <h1>
+        Tennis Originals</h1>
+         <a class="carrinho" href="#"> <i class="fas fa-shopping-cart"></i>
+         Carrinho( <span id="contador-carrinho"> 0 </span>) 
+        </a>
+  </header>
+    
+<main role="main">
+<section class="produtos">
+<div class="produto">
+  <div class="container-imagem">
+    <img src="https://cdn.awsli.com.br/2500x2500/1755/1755854/produto/87657524/6e0f808666.jpg" alt="Imagem de um tênis nike jordan"/>
+  </div>
+  <h2>The Air Jordan</h2>
+  <p class="preco">R$35.999,99</p>
+  <button class="botao-add-carrinho">
+    Adicionar ao Carrinho
+  </button>
+</div>
+
+<div class="produto">
+  <div class="container-imagem">
+    <img src="https://static.glami.com.br/img/520x520bt/216847372.jpg" alt="Imagem de um tênis nike jordan"/>
+  </div>
+  <h2>The Air Jordan High</h2>
+  <p class="preco">R$35.999,99</p>
+  <button class="botao-add-carrinho">
+    Adicionar ao Carrinho
+  </button>
+</div>
+
+<div class="produto">
+  <div class="container-imagem">
+    <img src="https://www.heatcheckco.in/cdn/shop/files/1097848_01.jpg_2_600x600.webp?v=1685186860" alt="Imagem de um tênis nike jordan"/>
+  </div>
+  <h2>The Air Jordan Retro</h2>
+  <p class="preco">R$35.999,99</p>
+  <button class="botao-add-carrinho">
+    Adicionar ao Carrinho
+  </button>
+</div>
+</section>
+</main>
+
+<footer>
+  <p> &copy; - 2023 - Desenvolvido por Mateus Oliveira Ltda </p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        let contador = 0;
+
+        $('.botao-add-carrinho').click(function () {
+          toastr.success('Produto Adicionado com sucesso','',{
+            progressBar: true
+          })
+          
+          contador++;
+
+          $('#contador-carrinho').text (contador);
+        })
+      })
+    </script>
+</body>
+</html>
